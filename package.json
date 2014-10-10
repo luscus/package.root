@@ -2,7 +2,7 @@
     "author": "https://github.com/luscus/package.root.finder/graphs/contributors",
     "name": "package.root.finder",
     "description": "Enables to find the first parent package in the path hierarchy",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "keywords": [
         "root",
         "package",
