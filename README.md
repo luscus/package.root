@@ -1,8 +1,8 @@
-# package.root.finder
+# package.root
 
-[![NPM version](https://badge.fury.io/js/package.root.finder.svg)](http://badge.fury.io/js/package.root.finder)
-[![dependencies](https://david-dm.org/luscus/package.root.finder.svg)](https://david-dm.org/luscus/package.root.finder)
-[![devDependency Status](https://david-dm.org/luscus/package.root.finder/dev-status.svg?theme=shields.io)](https://david-dm.org/luscus/package.root.finder#info=devDependencies)
+[![NPM version](https://badge.fury.io/js/package.root.svg)](http://badge.fury.io/js/package.root)
+[![dependencies](https://david-dm.org/luscus/package.root.svg)](https://david-dm.org/luscus/package.root)
+[![devDependency Status](https://david-dm.org/luscus/package.root/dev-status.svg?theme=shields.io)](https://david-dm.org/luscus/package.root#info=devDependencies)
 
 Enables to find the first package in the path hierarchy.
 It checks recursively for a `package.json` beginning in the first directory of its path.
@@ -10,7 +10,7 @@ It checks recursively for a `package.json` beginning in the first directory of i
 Bower information are completed with the `directory` property normaly stored in the `.bowerrc` file.
 
 
-Take a look to the [TODO](https://github.com/luscus/package.root.finder/blob/master/TODO.md) if you want to help towards the next steps.
+Take a look to the [TODO](https://github.com/luscus/package.root/blob/master/TODO.md) if you want to help towards the next steps.
 
 
 
@@ -20,12 +20,12 @@ Take a look to the [TODO](https://github.com/luscus/package.root.finder/blob/mas
 
 Execute following line
 
-    npm install package.root.finder@0.1.x --save
+    npm install package.root --save
 
 
 ### Require module
 
-    var root = require('package.root.finder');
+    var root = require('package.root');
 
 
 ## Usage
@@ -40,7 +40,7 @@ Returns an Object with following properties:
 
 Access the values with the point notation:
 
-    var root = require('package.root.finder');
+    var root = require('package.root');
 
     // get parent module's name
     root.name

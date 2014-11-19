@@ -1,9 +1,9 @@
 {
-  "name": "package.root.finder",
+  "name": "package.root",
   "license": "MIT",
   "version": "0.2.0",
-  "homepage": "https://github.com/luscus/package.root.finder",
-  "author": "https://github.com/luscus/package.root.finder/graphs/contributors",
+  "homepage": "https://github.com/luscus/package.root",
+  "author": "https://github.com/luscus/package.root/graphs/contributors",
   "description": "Enables to find the root package in the package hierarchy",
   "keywords": [
     "root",
@@ -22,11 +22,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/luscus/package.root.finder.git"
+    "url": "git://github.com/luscus/package.root.git"
   },
   "scripts": {
     "test": "grunt test"
   },
-  "bugs": "https://github.com/luscus/package.root.finder/issues",
-  "main": "./lib/package.root.finder.js"
+  "bugs": "https://github.com/luscus/package.root/issues",
+  "main": "./lib/package.root.js"
 }
