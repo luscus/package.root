@@ -53,10 +53,6 @@ Access the values with the point notation:
     // get bower directory
     root.bower.directory
 
-Methods:
-
-* `require`: the same as node's native *require* method, but loads the wanted package from the root package dependencies. Awaits a String as argument: 'mypackage' or '../root/folder/somefile',  '../package.json'
-
 
 
 -------------------

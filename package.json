@@ -1,7 +1,7 @@
 {
   "name": "package.root.finder",
   "license": "MIT",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "homepage": "https://github.com/luscus/package.root.finder",
   "author": "https://github.com/luscus/package.root.finder/graphs/contributors",
   "description": "Enables to find the root package in the package hierarchy",
