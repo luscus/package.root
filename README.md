@@ -4,7 +4,7 @@
 [![dependencies](https://david-dm.org/luscus/package.root.svg)](https://david-dm.org/luscus/package.root)
 [![devDependency Status](https://david-dm.org/luscus/package.root/dev-status.svg?theme=shields.io)](https://david-dm.org/luscus/package.root#info=devDependencies)
 
-Enables to find the first package in the path hierarchy.
+Enables to find the root package in the package hierarchy.
 It checks recursively for a `package.json` beginning in the first directory of its path.
 
 Bower information are completed with the `directory` property normaly stored in the `.bowerrc` file.
