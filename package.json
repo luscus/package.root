@@ -1,32 +1,32 @@
 {
-    "author": "https://github.com/luscus/package.root.finder/graphs/contributors",
-    "name": "package.root.finder",
-    "description": "Enables to find the first parent package in the path hierarchy",
-    "version": "0.1.2",
-    "keywords": [
-        "root",
-        "package",
-        "finder",
-        "parent package"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/luscus/package.root.finder.git"
-    },
-    "homepage": "https://github.com/luscus/package.root.finder",
-    "bugs": "https://github.com/luscus/package.root.finder/issues",
-    "main": "./lib/package.root.finder.js",
-    "dependencies": {},
-    "devDependencies": {
-        "grunt": "0.4.5",
-        "grunt-contrib-jshint": "0.10.0",
-        "load-grunt-tasks": "0.6.0"
-    },
-    "optionalDependencies": {},
-    "licenses": [
-        {
-            "type": "GPL",
-            "url": "https://github.com/luscus/package.root.finder/blob/master/COPYING"
-        }
-    ]
+  "name": "package.root.finder",
+  "license": "MIT",
+  "version": "0.1.3",
+  "homepage": "https://github.com/luscus/package.root.finder",
+  "author": "https://github.com/luscus/package.root.finder/graphs/contributors",
+  "description": "Enables to find the root package in the package hierarchy",
+  "keywords": [
+    "root",
+    "top",
+    "package",
+    "parent"
+  ],
+  "devDependencies": {
+    "chai": "1.9.1",
+    "grunt": "0.4.5",
+    "grunt-contrib-jshint": "0.10.0",
+    "grunt-license-report": "0.0.2",
+    "grunt-mocha-test": "0.10.2",
+    "load-grunt-tasks": "0.6.0",
+    "mocha": "1.21.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/luscus/package.root.finder.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "bugs": "https://github.com/luscus/package.root.finder/issues",
+  "main": "./lib/package.root.finder.js"
 }
