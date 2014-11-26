@@ -1,6 +1,9 @@
-var should = require('chai').should(),
-    root   = require('../lib/package.root'),
-    self   = require(root.path + '/package.json');
+var Path     = require('path'),
+    should   = require('chai').should(),
+    root     = require('../lib/package.root'),
+    self     = require(root.path + '/package.json'),
+    rootPath = Path.normalize(__dirname + Path.sep + '..'),
+    rootDir  = Path.basename(rootPath);
 
 
 
@@ -18,16 +21,19 @@ describe('ROOT:', function(){
 
   it('should have a property "directory"', function(){
     root.should.have.property('directory');
-    root.name.should.be.a('string');
+    root.directory.should.be.a('string');
+    root.directory.should.equal(rootDir);
   });
 
   it('should have a property "path"', function(){
     root.should.have.property('path');
     root.path.should.be.a('string');
+    root.path.should.equal(rootPath);
   });
 
   it('should have a property "package"', function(){
     root.should.have.property('package');
+    root.package.should.be.a('object');
     root.package.should.deep.equal(self);
   });
 });
