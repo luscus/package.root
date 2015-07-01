@@ -1,8 +1,13 @@
 # package.root
 
-[![NPM version](https://badge.fury.io/js/package.root.svg)](http://badge.fury.io/js/package.root)
-[![dependencies](https://david-dm.org/luscus/package.root.svg)](https://david-dm.org/luscus/package.root)
-[![devDependency Status](https://david-dm.org/luscus/package.root/dev-status.svg?theme=shields.io)](https://david-dm.org/luscus/package.root#info=devDependencies)
+[![NPM version](https://img.shields.io/npm/v/package.root.svg?style=flat)](https://www.npmjs.com/package/package.root "View this project on NPM")
+[![NPM downloads](https://img.shields.io/npm/dm/package.root.svg?style=flat)](https://www.npmjs.com/package/package.root "View this project on NPM")
+[![NPM license](https://img.shields.io/npm/l/package.root.svg?style=flat)](https://www.npmjs.com/package/package.root "View this project on NPM")
+[![flattr](https://img.shields.io/badge/flattr-donate-yellow.svg?style=flat)](http://flattr.com/thing/3817419/luscus-on-GitHub)
+
+![coverage](https://cdn.rawgit.com/luscus/package.root/master/reports/coverage.svg)
+[![David](https://img.shields.io/david/luscus/package.root.svg?style=flat)](https://david-dm.org/luscus/package.root)
+[![David](https://img.shields.io/david/dev/luscus/package.root.svg?style=flat)](https://david-dm.org/luscus/package.root#info=devDependencies)
 
 Enables to find the root package in the package hierarchy.
 It checks recursively for a `package.json` beginning in the first directory of its path.
