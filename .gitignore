@@ -1,8 +1,9 @@
 node_modules/
 bower_components/
+.idea/
+coverage/
 config/runtime.json
 npm-debug.log
-.git/
 .DS_Store
 *~
 ._*

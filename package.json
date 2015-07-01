@@ -12,20 +12,17 @@
     "parent"
   ],
   "devDependencies": {
-    "chai": "1.9.1",
-    "grunt": "0.4.5",
-    "grunt-contrib-jshint": "0.10.0",
-    "grunt-license-report": "0.0.2",
-    "grunt-mocha-test": "0.10.2",
-    "load-grunt-tasks": "0.6.0",
-    "mocha": "1.21.4"
+    "gulp": "3.9.0",
+    "gulpfile.basics": "0.0.2",
+    "chai": "3.0.0",
+    "mocha": "2.2.5"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/luscus/package.root.git"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "gulp test"
   },
   "bugs": "https://github.com/luscus/package.root/issues",
   "main": "./lib/package.root.js"
