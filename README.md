@@ -13,7 +13,7 @@ Enables to find the root package in the package hierarchy.
 It checks recursively for a `package.json` beginning in the first directory of its path.
 
 Automatically loads and executes plugins using the prefix `root.info.<scope>` as package names and located in the same `node_modules` folder.
-Those plugins enhance the returned Root Package Information Object with more information.
+Those plugins enhance the returned Root Package Information object with more information.
 
 About Bower for example: [root.info.bower](https://github.com/luscus/root.info.bower)
 (package provided to ensure backwards functionality with `package.root` 0.x.x)
@@ -49,6 +49,7 @@ Returns an Object with following properties:
 * `path`: absolut path to the root module directory
 * `package`: root module's *package.json* content
 
+Example:
 
     var root = require('package.root');
 
