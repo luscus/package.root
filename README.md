@@ -12,11 +12,13 @@
 Enables to find the root package in the package hierarchy.
 It checks recursively for a `package.json` beginning in the first directory of its path.
 
-Bower information are completed with the `directory` property normaly stored in the `.bowerrc` file.
+Automatically loads and executes plugins using the prefix `root.info.<scope>` as package names and located in the same `node_modules` folder.
+Those plugins enhance the returned Root Package Information Object with more information.
 
+About Bower for example: [root.info.bower](https://github.com/luscus/root.info.bower)
+(package provided to ensure backwards functionality with `package.root` 0.x.x)
 
-Take a look to the [TODO](https://github.com/luscus/package.root/blob/master/TODO.md) if you want to help towards the next steps.
-
+Added information are stored in a property based on the plugin name without the prefix: for `root.info.bower` in `bower`
 
 
 ## Installation
@@ -26,6 +28,10 @@ Take a look to the [TODO](https://github.com/luscus/package.root/blob/master/TOD
 Execute following line
 
     npm install package.root --save
+
+Add Bower information plugin
+
+    npm install root.info.bower --save
 
 
 ### Require module
@@ -37,28 +43,39 @@ Execute following line
 
 Returns an Object with following properties:
 
-* `name`: the name of the parent module
-* `directory`: the directory of the parent module
-* `package`: the parent module's *package.json* content
-* `bower`: the parent module's *bower.json* content or *false* if no bower is used. Also holds the `directory` property.
-* `path`: absolut path to the parent module directory
+* `name`: name of the root module
+* `directory`: directory name of the root module (may be different from package name)
+* `deployPath`: absolute path to the root package deploy directory
+* `path`: absolut path to the root module directory
+* `package`: root module's *package.json* content
 
-Access the values with the point notation:
 
     var root = require('package.root');
 
     // get parent module's name
-    root.name
-    // or
-    root.package.name
+    var name = root.name
+    // or with the package object
+    name = root.package.name
 
     // get root path
-    root.path
+    var path = root.path
+    
+    // if Bower plugin present and bower file was found
+    var bowerDir = root.bower.directory
 
-    // get bower directory
-    root.bower.directory
+## Write Plugins
 
+Plugin packages have to return a function taking the Root Package Information object as argument.
 
+Plugins returning `null` or `undefined` will be ignored.
+
+    module.exports = function pluginX (root) {
+      var info = {};
+      
+      /* do something in root to fill info*/
+      
+      return info;
+    };
 
 -------------------
 Copyright (c) 2015 Luscus (luscus.redbeard@gmail.com)
