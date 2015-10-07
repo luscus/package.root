@@ -5,7 +5,7 @@
 [![NPM license](https://img.shields.io/npm/l/package.root.svg?style=flat)](https://www.npmjs.com/package/package.root "View this project on NPM")
 [![flattr](https://img.shields.io/badge/flattr-donate-yellow.svg?style=flat)](http://flattr.com/thing/3817419/luscus-on-GitHub)
 
-![coverage](https://cdn.rawgit.com/luscus/package.root/master/reports/coverage.svg)
+![coverage](https://rawgit.com/luscus/package.root/master/reports/coverage.svg)
 [![David](https://img.shields.io/david/luscus/package.root.svg?style=flat)](https://david-dm.org/luscus/package.root)
 [![David](https://img.shields.io/david/dev/luscus/package.root.svg?style=flat)](https://david-dm.org/luscus/package.root#info=devDependencies)
 
