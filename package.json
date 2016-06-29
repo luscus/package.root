@@ -1,7 +1,7 @@
 {
   "name": "package.root",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/luscus/package.root",
   "author": "https://github.com/luscus/package.root/graphs/contributors",
   "description": "Enables to find the root package in the package hierarchy, and retrieve information about it",
@@ -17,7 +17,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
-    "gulpfile.basics": "^0.0.1",
+    "gulpfile.basics": "^0",
     "mocha": "^2.5.3"
   },
   "repository": {
