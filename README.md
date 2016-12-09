@@ -12,6 +12,8 @@
 Enables to find the root package in the package hierarchy.
 It checks recursively for a `package.json` beginning in the first directory of its path.
 
+If no `package.json` was found it will throw a `no root package found` error.
+
 Automatically loads and executes plugins using the prefix `root.info.<scope>` as package names and located in the same `node_modules` folder.
 Those plugins enhance the returned Root Package Information object with more information.
 
