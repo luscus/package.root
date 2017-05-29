@@ -15,7 +15,7 @@
     "package.loader": "^0.4.1"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.0.0",
     "gulp": "^3.9.1",
     "gulpfile.basics": "^0",
     "mocha": "^3.2.0"
