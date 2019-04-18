@@ -18,7 +18,7 @@
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulpfile.basics": "^0",
-    "mocha": "^3.2.0"
+    "mocha": "^6.1.4"
   },
   "repository": {
     "type": "git",
